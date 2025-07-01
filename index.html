@@ -204,7 +204,6 @@
   </body>
 
   <script>
-    // Header und Footer als Promises laden
     const loadHeader = fetch("header.html")
       .then((res) => res.text())
       .then((data) => {
@@ -217,7 +216,6 @@
         document.getElementById("footer").innerHTML = data;
       });
 
-    // Wenn beide fertig geladen sind, dann lade scripts.js
     Promise.all([loadHeader, loadFooter]).then(() => {
       const script = document.createElement("script");
       script.src = "scripts.js";

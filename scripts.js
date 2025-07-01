@@ -69,4 +69,4 @@ document.getElementById('load-map-btn').addEventListener('click', () => {
 
 
 const copyright = document.getElementById("copyright")
-copyright.innerText = `&copy; ${new Date().getFullYear()} Emilie Schulz. Alle Rechte vorbehalten.`
+copyright.innerText = `© ${new Date().getFullYear()} Emilie Schulz. Alle Rechte vorbehalten.`
