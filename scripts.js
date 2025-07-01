@@ -52,7 +52,7 @@ function berechneAlter(geburtsdatum) {
 const alter = berechneAlter("1986-12-31");
 document.getElementById("alter").textContent = alter;
 
-document.getElementById('load-map-btn').addEventListener('click', function() {
+document.getElementById('load-map-btn').addEventListener('click', () => {
     const container = document.getElementById('map-container');
     container.innerHTML = `
           <iframe
