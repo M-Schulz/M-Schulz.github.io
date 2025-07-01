@@ -51,3 +51,18 @@ function berechneAlter(geburtsdatum) {
 
 const alter = berechneAlter("1986-12-31");
 document.getElementById("alter").textContent = alter;
+
+document.getElementById('load-map-btn').addEventListener('click', function() {
+    const container = document.getElementById('map-container');
+    container.innerHTML = `
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10519.239559701497!2d11.413027933562223!3d48.7664266864822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479efffee554a62d%3A0x674acfa64085e947!2sFamilienpraxis%20Bodycoaching%20Ingolstadt!5e0!3m2!1sde!2sde!4v1749585640576!5m2!1sde!2sde"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          `
+  });
