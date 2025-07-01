@@ -66,3 +66,7 @@ document.getElementById('load-map-btn').addEventListener('click', () => {
           ></iframe>
           `
   });
+
+
+const copyright = document.getElementById("copyright")
+copyright.innerText = `&copy; ${new Date().getFullYear()} Emilie Schulz. Alle Rechte vorbehalten.`
