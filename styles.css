@@ -361,6 +361,28 @@ main {
   height: 100%;
 }
 
+#location-btn-ing, #location-btn-pfa {
+  width: 50%;
+  height: 50px;
+  background-color: var(--color-3);
+  color: var(--color-1);
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.05rem solid var(--color-2);
+  
+}
+#location-btn-ing {
+  border-right:  0.05rem solid var(--color-2);
+}
+
+#location-btn-ing:hover, #location-btn-pfa:hover {
+  background-color: var(--color-5);
+}
+
+
+
 footer {
   background-color: var(--color-2);
   color: var(--color-1);
