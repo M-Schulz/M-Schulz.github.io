@@ -108,7 +108,9 @@
             </p>
 
             <ul class="kurs-info">
+              <!-- Kurs 1 -->
               <li>
+                <h3>Kurs 1 – Ingolstadt</h3>
                 <i class="fas fa-calendar-alt"></i>
                 <strong> (2025):</strong> immer Mittwochs
                 <div class="kurs-termine-grid">
@@ -142,10 +144,42 @@
                 Harderstraße 12, 85049 Ingolstadt
               </li>
             </ul>
-            <!-- TODO -->
-            <!-- <a id="signup-btn" href="#anmeldung" class="kurs-button"
-              >Jetzt anmelden</a
-            > -->
+            <div class="spacer-line"></div>
+            <!-- Kurs 2 -->
+            <ul class="kurs-info">
+              <li>
+                <h3>Kurs 2 – Reichertshofen</h3>
+                <i class="fas fa-calendar-alt"></i>
+                <strong> (2025):</strong> immer Dienstags
+                <div class="kurs-termine-grid">
+                  <div class="termine-grid">
+                    <div>05.08.</div>
+                    <div>12.08.</div>
+                    <div>19.08.</div>
+                    <div>02.09.</div>
+                    <div>09.09.</div>
+                    <div>16.09.</div>
+                    <div>23.09.</div>
+                    <div>30.09.</div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-clock"></i> <strong>:</strong> 18:30 – 19:30
+                Uhr<br />
+              </li>
+              <li>
+                <i class="fas fa-euro-sign"></i> <strong>:</strong> 8x (im
+                Bundle) für 100€<br />
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> <strong>:</strong>
+                <a href="https://www.mpcoaching.de/" class="signup-email">
+                  21 twentyone Reichertshofen </a
+                ><br />
+                Marktstraße 21, 85084 Reichertshofen
+              </li>
+            </ul>
 
             <div class="signup-container">
               <strong>Jetzt anmelden:</strong>
@@ -172,8 +206,16 @@
         </div>
       </section>
       <section id="location">
-        <div id="map-container" class="location">
-          <div
+        <div id="map-container" class="location" style="display: flex; flex-direction: column; flex-grow: 1;">
+          <div style="display: flex; flex-direction: row">
+            <div id="location-btn-ing" style="height: 50px; width: 50%; background-color: #000">
+              Ingolstadt
+            </div>
+            <div id="location-btn-pfa" style="height: 50px; width: 50%; background-color: #fff">
+              Pfaffenhofen
+            </div>
+          </div>
+          <div id="iframe-container"
             style="
               display: flex;
               flex-direction: column;
@@ -203,7 +245,8 @@
     <button id="scrollToTop" title="Nach oben">⬆</button>
   </body>
 
-  <script>
+  <script src="scripts.js"></script>
+  <!-- <script>
     const loadHeader = fetch("header.html")
       .then((res) => res.text())
       .then((data) => {
@@ -222,5 +265,5 @@
       script.defer = true;
       document.body.appendChild(script);
     });
-  </script>
+  </script> -->
 </html>
