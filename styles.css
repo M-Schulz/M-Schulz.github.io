@@ -371,7 +371,8 @@ main {
   justify-content: center;
   align-items: center;
   border-bottom: 0.05rem solid var(--color-2);
-  
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 #location-btn-ing {
   border-right:  0.05rem solid var(--color-2);
