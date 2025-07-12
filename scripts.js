@@ -61,6 +61,7 @@ const srcIng = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10519.2395
 const srcPfaf = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2635.497985716309!2d11.469880600000002!3d48.6577182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e57c763772459%3A0x738c7e1fa71a886f!2sTwenty%20One!5e0!3m2!1sde!2sde!4v1752326023506!5m2!1sde!2sde"
 let srcCurrent = srcIng
 let locCurrent = ing
+let cookieConfirmed = false
 
 
 document.getElementById('location-btn-ing').addEventListener('click', () => {
@@ -68,6 +69,8 @@ document.getElementById('location-btn-ing').addEventListener('click', () => {
     srcCurrent = srcIng
     locCurrent = ing
   }
+
+  if (cookieConfirmed) {
   const container = document.getElementById('iframe-container');
     container.removeAttribute("style")
     container.setAttribute("style", "height:100%; width:100%")
@@ -84,7 +87,7 @@ document.getElementById('location-btn-ing').addEventListener('click', () => {
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
           `
-
+}
 })
 
 document.getElementById('location-btn-pfa').addEventListener('click', () => {
@@ -92,6 +95,8 @@ document.getElementById('location-btn-pfa').addEventListener('click', () => {
     srcCurrent = srcPfaf
     locCurrent = pfaf
   }
+
+  if (cookieConfirmed) {
   const container = document.getElementById('iframe-container');
     container.removeAttribute("style")
     container.setAttribute("style", "height:100%; width:100%")
@@ -108,11 +113,12 @@ document.getElementById('location-btn-pfa').addEventListener('click', () => {
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
           `
-
+  }
 })
 
 document.getElementById('load-map-btn').addEventListener('click', () => {
 
+    cookieConfirmed = true
     const container = document.getElementById('iframe-container');
     container.removeAttribute("style")
     container.setAttribute("style", "height:100%; width:100%")
