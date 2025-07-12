@@ -16,20 +16,20 @@ window.scrollTo({
 });
 });
 
-  // const burger = document.getElementById("burger");
-  // const menu = document.getElementById("navbar");
+  const burger = document.getElementById("burger");
+  const menu = document.getElementById("navbar");
 
-  // burger.addEventListener("click", () => {
-  //   menu.classList.toggle("active");
-  // });
+  burger.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
 
-  // // Klick außerhalb erkennt
-  // document.addEventListener("click", (e) => {
-  //   const isClickInside = menu.contains(e.target) || burger.contains(e.target);
-  //   if (!isClickInside ) {
-  //     menu.classList.remove("active");
-  //   }
-  // });
+  // Klick außerhalb erkennt
+  document.addEventListener("click", (e) => {
+    const isClickInside = menu.contains(e.target) || burger.contains(e.target);
+    if (!isClickInside ) {
+      menu.classList.remove("active");
+    }
+  });
 
 // const signupBtn = document.getElementById("signup-btn")
 // signupBtn.addEventListener("click", ()=> {
@@ -132,5 +132,5 @@ document.getElementById('load-map-btn').addEventListener('click', () => {
   });
 
 
-// const copyright = document.getElementById("copyright")
-// copyright.innerText = `© ${new Date().getFullYear()} Emilie Schulz. Alle Rechte vorbehalten.`
+const copyright = document.getElementById("copyright")
+copyright.innerText = `© ${new Date().getFullYear()} Emilie Schulz. Alle Rechte vorbehalten.`
