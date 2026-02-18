@@ -90,31 +90,31 @@ document.getElementById('location-btn-ing').addEventListener('click', () => {
 }
 })
 
-document.getElementById('location-btn-pfa').addEventListener('click', () => {
-  if (locCurrent != pfaf) {
-    srcCurrent = srcPfaf
-    locCurrent = pfaf
-  }
+// document.getElementById('location-btn-pfa').addEventListener('click', () => {
+//   if (locCurrent != pfaf) {
+//     srcCurrent = srcPfaf
+//     locCurrent = pfaf
+//   }
 
-  if (cookieConfirmed) {
-  const container = document.getElementById('iframe-container');
-    container.removeAttribute("style")
-    container.setAttribute("style", "height:100%; width:100%")
+//   if (cookieConfirmed) {
+//   const container = document.getElementById('iframe-container');
+//     container.removeAttribute("style")
+//     container.setAttribute("style", "height:100%; width:100%")
 
-    container.innerHTML = `
-          <iframe
-            id=iframeElement
-            src=${srcCurrent}
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-          `
-  }
-})
+//     container.innerHTML = `
+//           <iframe
+//             id=iframeElement
+//             src=${srcCurrent}
+//             width="600"
+//             height="450"
+//             style="border: 0"
+//             allowfullscreen=""
+//             loading="lazy"
+//             referrerpolicy="no-referrer-when-downgrade"
+//           ></iframe>
+//           `
+//   }
+// })
 
 document.getElementById('load-map-btn').addEventListener('click', () => {
 
