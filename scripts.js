@@ -55,9 +55,9 @@ const alter = berechneAlter("1986-12-31");
 document.getElementById("alter").textContent = alter;
 
 
-const ing = "Ingolstadt"
+const ing = "Eitensheim"
 const pfaf = "Pfaffenhofen"
-const srcIng = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10519.239559701497!2d11.413027933562223!3d48.7664266864822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479efffee554a62d%3A0x674acfa64085e947!2sFamilienpraxis%20Bodycoaching%20Ingolstadt!5e0!3m2!1sde!2sde!4v1749585640576!5m2!1sde!2sde"
+const srcIng = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1268.75431623215!2d11.313755440487705!3d48.827385065672274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6bb7026a15da48eb%3A0x462d1c2dc7ea33b6!2sMiA%20Lounge%20-%20Ganzheitliches%20Gesundheits-%20und%20Familienzentrum%20Eitensheim!5e0!3m2!1sde!2sde!4v1771447887711!5m2!1sde!2sde"
 const srcPfaf = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2635.497985716309!2d11.469880600000002!3d48.6577182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e57c763772459%3A0x738c7e1fa71a886f!2sTwenty%20One!5e0!3m2!1sde!2sde!4v1752326023506!5m2!1sde!2sde"
 let srcCurrent = srcIng
 let locCurrent = ing
