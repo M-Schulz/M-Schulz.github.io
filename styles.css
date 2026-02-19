@@ -247,6 +247,7 @@ main {
 .beschreibung {
   font-size: 1.1rem;
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 .kurs-info {
